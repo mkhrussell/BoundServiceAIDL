@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Image Downloader</string>
+    <string name="hint_image_url">Enter image URL</string>
+    <string name="action_download_image">Download image</string>
+    <string name="content_description_downloaded_image">Downloaded image preview</string>
+    <string name="placeholder_no_image">Downloaded image preview will appear here</string>
+</resources>
