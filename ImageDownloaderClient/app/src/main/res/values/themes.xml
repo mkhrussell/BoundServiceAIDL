@@ -1,3 +1,3 @@
 <resources>
-    <style name="Theme.ImageDownloaderStartedService" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.ImageDownloaderStartedService" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
 </resources>

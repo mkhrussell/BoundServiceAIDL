@@ -1,11 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.kamrul.imagedownloaderclient"
+    namespace = "com.kamrul.imagedownloader.client"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -13,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.kamrul.imagedownloaderclient"
+        applicationId = "com.kamrul.imagedownloader.client"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -38,6 +39,7 @@ android {
 
     buildFeatures {
         compose = true
+        aidl = true
     }
 
 }
@@ -60,7 +62,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.hilt.android)
-    implementation(libs.material)
     implementation(libs.kotlinx.coroutines.android)
     ksp(libs.hilt.compiler)
 
